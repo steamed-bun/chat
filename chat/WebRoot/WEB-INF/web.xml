@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ajax_02</display-name>
+  <servlet>
+    <servlet-name>SendServlet</servlet-name>
+    <servlet-class>com.xiyoou.ajax.servlet.SendServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ServletAsk</servlet-name>
+    <servlet-class>com.xiyoou.ajax.servlet.ServletAsk</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ServletGet</servlet-name>
+    <servlet-class>com.xiyoou.ajax.servlet.ServletGet</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>SendServlet</servlet-name>
+    <url-pattern>/sendServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletAsk</servlet-name>
+    <url-pattern>/servletAsk</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletGet</servlet-name>
+    <url-pattern>/servletGet</url-pattern>
+  </servlet-mapping>
+</web-app>
